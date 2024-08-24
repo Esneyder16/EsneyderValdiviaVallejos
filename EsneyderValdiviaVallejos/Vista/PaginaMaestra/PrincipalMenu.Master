@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PrincipalMenu.master.cs" Inherits="EsneyderValdiviaVallejos.Vista.PaginaMaestra.PrincipalMenu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %></title>
+    <link href="Content/site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <header>
+                <h1>Gestor de Viajeros</h1>
+                <nav>
+                    <ul>
+                        <li><a href="Default.aspx">Inicio</a></li>
+                        <li><a href="AddViajero.aspx">Agregar Viajero</a></li>
+                        <li><a href="ListViajeros.aspx">Lista de Viajeros</a></li>
+                        <li><a href="AddEntradaSalida.aspx">Agregar Entrada/Salida</a></li>
+                        <li><a href="ListEntradasSalidas.aspx">Lista de Entradas/Salidas</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </main>
+
+            <footer>
+                <p>&copy; Control de Migracion</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
